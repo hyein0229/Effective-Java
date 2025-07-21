@@ -6,7 +6,6 @@
 - 동기화된 영역 안에선 재정의할 수 있는 메서드나 클라이어트가 넘겨준 함수 객체를 호출해선 안된다.
 - 이를 외부에서 들어온 **외계인 메서드(alien method)** 이다.
 - 외계인 메서드는 하는 일에 따라 예외를 일으키거나 교착상태에 빠지게 하거나, 데이터를 훼손할 수 있다.
-<br>
 
 ### `안전 실패(safety failure) 문제`
 ```java
@@ -136,8 +135,8 @@ ___
 
 ### 해결1 - 외계인 메서드 호출을 동기화 블록 바깥으로 옮기기
 ```java
-private void notifyElementAdded《E element) { 
-    List<SetObserver<E» snapshot=null; 
+private void notifyElementAdded(E element) { 
+    List<SetObserver<E>> snapshot=null; 
     synchronized(observers) { 
         snapshot = new ArrayList<>《observers); 
     }
