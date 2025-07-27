@@ -16,6 +16,13 @@
 - [Item 04. 인스턴스화를 막으려거든 private 생성자를 사용하라](/chapter02/item-04.md)
 - [Item 05. 자원을 직접 명시하지 말고 의존 객체 주입을 사용하라](/chapter02/item-05.md)
 
+### 4장 클래스와 인터페이스
+- [Item 15. 클래스와 멤버의 접근 권한을 최소화하라](/chapter04/item-15.md)
+- [Item 16. public 클래스에선 public 필드가 아닌 접근자 메소드를 사용하라](/chapter04/item-16.md)
+- [Item 17. 변경 가능성을 최소화하라](/chapter04/item-17.md)
+- [Item 18. 상속보다는 컴포지션을 사용하라](/chapter04/item-18.md)
+- [Item 19. 상속을 고려해 설계하고 문서화하라. 그러지 않았다면 상속을 금지하라](/chapter04/item-19.md)
+
 ### 10장 예외
 - [Item 73. 추상화 수준에 맞는 예외를 던지라](/chapter10/item-73.md)
 - [Item 74. 메서드가 던지는 모든 예외를 문서화하라](/chapter10/item-74.md)
