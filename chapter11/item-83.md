@@ -58,7 +58,7 @@ private static FieldType getField() {return FieldHolder.field;}
 
 ___
 
-### 이중검사(doble-check) 관용구 사용
+### 이중검사(double-check) 관용구 사용
 ```java
 private volatile FieldType field;
 
