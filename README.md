@@ -23,6 +23,10 @@
 - [Item 18. 상속보다는 컴포지션을 사용하라](/chapter04/item-18.md)
 - [Item 19. 상속을 고려해 설계하고 문서화하라. 그러지 않았다면 상속을 금지하라](/chapter04/item-19.md)
 
+### 9장 일반적인 프로그래밍 원칙
+- [Item 58. 전통적인 for 문보다는 for-each 문을 사용하라](/chapter09/item-58.md)
+- [Item 65. 리플렉션보다는 인터페이스를 사용하라](/chapter09/item-65.md)
+
 ### 10장 예외
 - [Item 73. 추상화 수준에 맞는 예외를 던지라](/chapter10/item-73.md)
 - [Item 74. 메서드가 던지는 모든 예외를 문서화하라](/chapter10/item-74.md)
@@ -33,3 +37,8 @@
 ### 11장 동시성
 - [Item 78. 공유 중인 가변 데이터는 동기화해 사용하라](/chapter11/item-78.md)
 - [Item 79. 과도한 동기화는 피하라](/chapter11/item-79.md)
+- [Item 80. 스레드보다는 실행자, 태스크, 스트림을 애용하라](/chapter11/item-80.md)
+- [Item 81. wait 와 notify 보다는 동시성 유틸리티를 애용하라](/chapter11/item-81.md)
+- [Item 82. 스레드 안전성 수준을 문서화하라](/chapter11/item-82.md)
+- [Item 83. 지연 초기화는 신중히 사용하라](/chapter11/item-83.md)
+- [Item 84. 프로그램의 동작을 스레드 스케줄러에 기대지 말라](/chapter11/item-84.md)
