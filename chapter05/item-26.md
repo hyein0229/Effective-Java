@@ -1,5 +1,4 @@
 # Item 26. 로 타입은 사용하지 말라
-
 ## 제네릭 클래스, 제네릭 인터페이스
 
 - 통틀어 **제네릭 타입(generic type)** 이라고 한다.
@@ -95,9 +94,8 @@ class FailWithRawType {
 - list.add 부분에서 unchecked call 경고 메시지가 출력되긴하지만 정상 컴파일된다.
 - strings.get(0) 에서 형변환 시 Integer → String 변환하려 시도하여 ClassCastException을 던진다.
 - **List<Object>로 매개변수 타입을 바꾼다면 컴파일 오류가 발생한다.**
-    - List<String>을 List<Object> 로 바꿀 수 없어 incompatible types error가 발생한다.
-
-
+- 즉, List<String>을 List<Object> 로 바꿀 수 없어 incompatible types error가 발생한다.
+    
 ## 타입을 모르고 사용하고 싶을 때 - 비한정적 와일드카드 타입
 
 로 타입은 원소의 타입을 몰라도 되므로 사용하고 싶어질 수 있다. 다음은 두 집합을 받아 서로 공통된 것들의 개수를 반환하는 메소드이다. 로 타입은 안전하지 않다.
