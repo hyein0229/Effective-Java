@@ -9,12 +9,16 @@
 
 
 ## 내용 정리
+### 1장 들어가기
 ### 2장 객체 생성과 파괴
 - [Item 01. 생성자 대신 정적 팩토리 메서드를 고려하라](/chapter02/item-01.md)
 - [Item 02. 생성자에 매개변수가 많다면 빌더를 고려하라](/chapter02/item-02.md)
 - [Item 03. 생성자나 열거 타입으로 싱글턴임을 보증하라](/chapter02/item-03.md)
 - [Item 04. 인스턴스화를 막으려거든 private 생성자를 사용하라](/chapter02/item-04.md)
 - [Item 05. 자원을 직접 명시하지 말고 의존 객체 주입을 사용하라](/chapter02/item-05.md)
+
+### 3장 모든 객체의 공통 메서드
+개인 공부
 
 ### 4장 클래스와 인터페이스
 - [Item 15. 클래스와 멤버의 접근 권한을 최소화하라](/chapter04/item-15.md)
@@ -29,6 +33,21 @@
 - [Item 24. 멤버 클래스는 되도록 static 으로 만들라](/chapter04/item-24.md)
 - [Item 25. 톱레벨 클래스는 한 파일에 하나만 담으라](/chapter04/item-25.md)
 
+### 5장 제네릭
+- [Item 26. 로 타입은 사용하지 말라](/chapter05/item-26.md)
+- [Item 27. 비검사 경고를 제거하라](/chapter05/item-27.md)
+- [Item 28. 배열보다는 리스트를 사용하라](/chapter05/item-28.md)
+- [Item 29. 이왕이면 제네릭 타입으로 만들라](/chapter05/item-29.md)
+- [Item 30. 이왕이면 제네릭 메서드로 만들라](/chapter05/item-30.md)
+- [Item 31. 한정적 와일드카드를 사용해 API 유연성을 높이라](/chapter05/item-31.md)
+- [Item 32. 제네릭과 가변인수를 함께 쓸 때는 신중하라](/chapter05/item-32.md)
+- [Item 33. 타입 안전 이종 컨테이너를 고려하라](/chapter05/item-33.md)
+
+### 6장 열거 타입과 애너테이션
+개인 공부
+
+### 7장 람다와 스트림
+### 8장 메서드
 ### 9장 일반적인 프로그래밍 원칙
 - [Item 58. 전통적인 for 문보다는 for-each 문을 사용하라](/chapter09/item-58.md)
 - [Item 65. 리플렉션보다는 인터페이스를 사용하라](/chapter09/item-65.md)
