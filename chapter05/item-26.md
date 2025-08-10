@@ -67,34 +67,33 @@ class ParameterizedCollectionSample {
     - 매개변수로 List를 받는 메소드에 `List<String>`을 넘길 수 있지만, `List<Object>`일 때는 불가능하다.
     - `List<String>`은 로 타입인 List 의 하위이지만,  `List<Object>`의 하위 타입은 아니다.
 
-런타임에 실패한다 - 로 타입을 매개변수로 받는 경우
+런타임에 실패하는 예 - 로 타입을 매개변수로 받는 경우
 
 ```java
 class FailWithRawType {
     public static void main(String[] args) {
         List<String> strings = new ArrayList<>();
         unsafeAdd(strings, Integer.valueOf(42));
-        String s = strings.get(0); // 컴파일러가 자동으로 형변환 코드를 넣어준다.
+        String s = strings.get(0); // 컴파일러가 자동 형변환 코드를 넣는다.
     }
-		
-		//1. List 로 타입을 매개변수로 받음
-		// 경고 메시지만 뜨고 정상 컴파일
+
+    // 1. 로 타입 사용
     private static void unsafeAdd(List list, Object o) {
-        list.add(o); // unchecked call 경고 메시지 출력, 정상 컴파일 (o)
+        list.add(o); // unchecked call 경고 메시지 출력, 정상 컴파일
     }
-    
-    // 2. List 로 타입을 매개변수로 받음
-    // List<String> 을 인자로 넘길 때 incompatible types 컴파일 오류 발생
+
+    // 2. 매개변수화 타입 사용
     private static void unsafeAdd(List<Object> list, Object o) { // 컴파일 오류!!!
         list.add(o);
     }
 }
 ```
+- 로 타입 사용의 경우
+    - list.add 부분에서 unchecked call 경고 메시지가 출력되지만 정상 컴파일된다.
+    - strings.get(0)에서 Integer → String 변환 시 ClassCastException 발생.
+- 하지만 `List<Object>`로 매개변수 타입을 바꾸면 컴파일 오류가 발생
+    - 즉, `List<String>`을 `List<Object>`로 바꿀 수 없어 incompatible types 오류가 난다.
 
-- list.add 부분에서 unchecked call 경고 메시지가 출력되긴하지만 정상 컴파일된다.
-- strings.get(0) 에서 형변환 시 Integer → String 변환하려 시도하여 ClassCastException을 던진다.
-- **List<Object>로 매개변수 타입을 바꾼다면 컴파일 오류가 발생한다.**
-- 즉, List<String>을 List<Object> 로 바꿀 수 없어 incompatible types error가 발생한다.
     
 ## 타입을 모르고 사용하고 싶을 때 - 비한정적 와일드카드 타입
 
